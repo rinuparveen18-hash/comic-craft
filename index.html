@@ -1,0 +1,200 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="ComicCraft - Create amazing AI-powered comics from your ideas."
+    >
+
+    <title>ComicCraft - AI Comic Generator</title>
+
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', path='css/style.css') }}"
+    >
+</head>
+
+<body>
+
+    <!-- ============================= -->
+    <!-- Navigation -->
+    <!-- ============================= -->
+
+    <nav class="navbar">
+
+        <div class="nav-container">
+
+            <a href="/" class="logo">
+                <span class="logo-icon">🎨</span>
+                <span>ComicCraft</span>
+            </a>
+
+            <div class="nav-links">
+
+                <a href="#create">
+                    Create
+                </a>
+
+                <a href="#features">
+                    Features
+                </a>
+
+                <a href="#how-it-works">
+                    How It Works
+                </a>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <!-- ============================= -->
+    <!-- Hero Section -->
+    <!-- ============================= -->
+
+    <header class="hero">
+
+        <div class="hero-content">
+
+            <div class="badge">
+                ✨ AI-Powered Comic Creation
+            </div>
+
+            <h1>
+                Turn Your Ideas Into
+                <span class="highlight">
+                    Amazing Comics
+                </span>
+            </h1>
+
+            <p class="hero-description">
+                Create characters, stories, scenes, and complete
+                comic panels with the power of generative AI.
+                Just describe your idea and let ComicCraft
+                bring it to life.
+            </p>
+
+            <a
+                href="#create"
+                class="hero-button"
+            >
+                Start Creating
+                <span>→</span>
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <!-- ============================= -->
+    <!-- Comic Creation Section -->
+    <!-- ============================= -->
+
+    <main>
+
+        <section
+            id="create"
+            class="create-section"
+        >
+
+            <div class="section-heading">
+
+                <span class="section-label">
+                    CREATE YOUR COMIC
+                </span>
+
+                <h2>
+                    What story do you want to tell?
+                </h2>
+
+                <p>
+                    Describe your comic idea and customize
+                    the story to match your imagination.
+                </p>
+
+            </div>
+
+
+            <div class="generator-card">
+
+                <form
+                    id="comic-form"
+                    method="post"
+                    action="/generate"
+                >
+
+                    <!-- ============================= -->
+                    <!-- Story -->
+                    <!-- ============================= -->
+
+                    <div class="form-section">
+
+                        <label
+                            for="story"
+                            class="form-label"
+                        >
+                            Your Story
+                        </label>
+
+                        <p class="form-help">
+                            Describe the story, characters,
+                            setting, and events you want
+                            in your comic.
+                        </p>
+
+                        <textarea
+                            id="story"
+                            name="story"
+                            rows="7"
+                            maxlength="5000"
+                            placeholder="Example: A young inventor discovers a mysterious robot in an abandoned laboratory. The robot can control time, but every use creates a new problem..."
+                            required
+                        ></textarea>
+
+                        <div class="character-count">
+                            <span id="story-count">0</span>
+                            / 5000 characters
+                        </div>
+
+                    </div>
+
+
+                    <!-- ============================= -->
+                    <!-- Character -->
+                    <!-- ============================= -->
+
+                    <div class="form-section">
+
+                        <label
+                            for="characters"
+                            class="form-label"
+                        >
+                            Main Characters
+                        </label>
+
+                        <p class="form-help">
+                            Describe the main characters
+                            you want in your comic.
+                        </p>
+
+                        <textarea
+                            id="characters"
+                            name="characters"
+                            rows="4"
+                            maxlength="2500"
+                            placeholder="Example: Alex - a curious 17-year-old inventor with messy black hair. Robo - a small friendly silver robot with glowing blue eyes."
+                        ></textarea>
+
+                        <div class="character-count">
+```
