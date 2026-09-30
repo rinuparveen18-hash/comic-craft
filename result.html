@@ -1,0 +1,140 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Your AI-generated ComicCraft comic."
+    >
+
+    <title>
+        Your Comic - ComicCraft
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', path='css/style.css') }}"
+    >
+
+</head>
+
+<body>
+
+    <!-- ========================================= -->
+    <!-- Navigation -->
+    <!-- ========================================= -->
+
+    <nav class="navbar">
+
+        <div class="nav-container">
+
+            <a href="/" class="logo">
+                <span class="logo-icon">🎨</span>
+                <span>ComicCraft</span>
+            </a>
+
+            <div class="nav-links">
+
+                <a href="/">
+                    Create New
+                </a>
+
+                <a href="#comic">
+                    My Comic
+                </a>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <!-- ========================================= -->
+    <!-- Main -->
+    <!-- ========================================= -->
+
+    <main class="result-page">
+
+        <!-- ===================================== -->
+        <!-- Page Header -->
+        <!-- ===================================== -->
+
+        <section class="result-header">
+
+            <div class="badge">
+                ✨ Your Comic Is Ready
+            </div>
+
+            <h1>
+                Your AI-Generated Comic
+            </h1>
+
+            <p>
+                ComicCraft transformed your idea into
+                a complete comic story.
+            </p>
+
+        </section>
+
+
+        <!-- ===================================== -->
+        <!-- Comic Information -->
+        <!-- ===================================== -->
+
+        <section class="comic-information">
+
+            <div class="info-item">
+
+                <span class="info-label">
+                    Genre
+                </span>
+
+                <strong>
+                    {{ genre | default("Comic") }}
+                </strong>
+
+            </div>
+
+
+            <div class="info-item">
+
+                <span class="info-label">
+                    Art Style
+                </span>
+
+                <strong>
+                    {{ art_style | default("Digital Art") }}
+                </strong>
+
+            </div>
+
+
+            <div class="info-item">
+
+                <span class="info-label">
+                    Panels
+                </span>
+
+                <strong>
+                    {{ panel_count | default("8") }}
+                </strong>
+
+            </div>
+
+
+            <div class="info-item">
+
+                <span class="info-label">
+                    Language
+                </span>
+```
